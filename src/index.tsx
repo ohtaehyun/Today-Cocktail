@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
 import rootReducer from "./store";
@@ -10,7 +9,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import theme from './theme';
 
 const store = configureStore({reducer: rootReducer});
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

@@ -3,12 +3,15 @@ import { Box, Grid, IconButton, Input } from "@mui/material";
 import { borderRadius } from "@mui/system";
 
 const MainPage: React.FC = () => {
+    const searchHandle = () => {
+        console.log("?");
+    }
     return (
         <Grid container spacing={2} justifyContent={"center"} padding={'15px'}>
             <Grid item xs={6} justifyContent={"center"}>
                 <Box style={searchBarWrap}>
                     <Input disableUnderline={true} style={width}></Input>
-                    <IconButton>
+                    <IconButton onClick={searchHandle}>
                         <Search></Search>
                     </IconButton>
                 </Box>
