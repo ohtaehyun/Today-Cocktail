@@ -1,20 +1,19 @@
-import { Box, Button, Icon, IconButton, TextField } from "@mui/material";
+import { Search } from "@mui/icons-material";
+import { Box, Button, Grid, Icon, IconButton, Input, makeStyles, TextField } from "@mui/material";
+import { padding } from "@mui/system";
+
 
 const MainPage: React.FC = () => {
-
     return (
-        <Box style={wrap}>
-            <Box>
-                <TextField></TextField>
-                <IconButton></IconButton>
-            </Box>
-        </Box>
-    );
-}
-
-const wrap = {
-  width: '100%',
-  height: '100%'
+        <Grid container spacing={2} justifyContent={"center"}>
+            <Grid item xs={6}>
+                <Input></Input>
+                <IconButton>
+                    <Search></Search>
+                </IconButton>
+            </Grid>
+        </Grid>
+    )
 }
 
 export default MainPage;
